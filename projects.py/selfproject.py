@@ -12,15 +12,15 @@ subset= df.iloc[1:4, 2:6]
 print(subset)
 
 random_operation = np.random.randint(0, 111, (3, 3))
-df = pd.DataFrame(random_operation, columns=["A", "B", "C"])
+df = pd.DataFrame(random_operation,columns = ["A", "B", "C"])
 print("DataFrame:\n", df)
 print("\n Mean :\n" ,df.mean())
 print("\n median :\n" ,df.median())
 print("\n standard deviation :\n" ,df.std())
 
 data = {"name" : ["john", "anna", "peter", "linda"], "age" : [28, 24, 35, 32], "city" : ["New York", "paris", "berlin", "London"]}
-df = pd.DataFrame(data)
-print("first two rows :\n" ,df.head(2))
+df = pd.DataFrame(data)  #sort the data in 2d array form
+print("first two rows :\n" ,df.head(2)) 
 print("\n last two rows:\n", df.tail(2))
 df["salary"] = [7000, 8000, 120000, 110000]
 
